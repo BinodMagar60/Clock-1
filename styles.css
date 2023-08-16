@@ -1,0 +1,225 @@
+
+
+
+
+:root{
+    --primary-black: black;
+}
+
+
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+   display: flex;
+   justify-content: center;
+  
+}
+
+
+.whole-container{
+    position: relative;
+    /* margin: 200px; */
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    border-radius: 100px;
+}
+
+
+
+
+.analog-container{
+    margin: 30px;
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+    
+}
+
+.circle::before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    
+    background-color: white;
+    border: 3px solid black;
+    z-index: 11;
+}
+
+
+
+.circle span{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    inset:3px;
+    transform: rotate(calc(30deg*var(--i)));
+}
+.circle span b{
+    display: inline-block;
+    transform: rotate(calc(-30deg*var(--i)));
+
+}
+
+
+.circle .arm{
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 10;
+    
+}
+
+.circle .arm i{
+    position: absolute;
+    height: 50%;
+    
+    background-color: black;
+    transform-origin: bottom;
+    transform: scaleY(0.8);
+}
+
+#sec-an i{
+    width: 3px;
+}
+
+#min-an i{
+    width: 4px;
+}
+
+#hrs-an i{
+     width: 6px;
+}
+
+#sec-an{
+    height: 210px;
+    width: 210px;
+
+}
+#min-an{
+    height: 185px;
+    width: 185px;
+}
+#hrs-an{
+    height: 155px;
+    width: 155px;
+}
+
+
+
+.box{
+    height: 100px;
+    width: 500px;
+    border: 1px solid black;
+    display: flex;position: relative;
+    align-items: center;
+    margin: 30px;
+    justify-content: space-evenly;
+    font-size: 35px;
+}
+#hrs-dg::after{
+    content: 'Hrs';
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    bottom: 10px;
+    left: 67px;
+    font-weight: bold;
+    
+}
+#min-dg::after{
+    content: 'Min';
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    bottom: 10px;
+    left: 236px;
+    font-weight: bold;
+    
+}
+#sec-dg::after{
+    content: 'Sec';
+    color: black;
+    font-size: 16px;
+    position: absolute;
+    bottom: 10px;
+    left: 405px;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
