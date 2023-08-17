@@ -32,6 +32,8 @@ body{
     align-items: center;
     gap: 3rem;
     border-radius: 100px;
+    padding: 0 30px;
+
 }
 
 
@@ -182,6 +184,26 @@ body{
 
 
 
+
+.button-1{
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    border-radius: 50%;
+    
+    
+    
+}
+
+.button-2{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
