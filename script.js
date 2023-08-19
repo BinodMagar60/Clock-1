@@ -27,6 +27,23 @@ setInterval(() => {
 
 
 
+const colorBoxC = document.getElementById("colorBoxC");
+const colorBox = document.getElementById("colorBox");
+
+function changeColor()  {
+  const selectedColor = colorBox.value;
+  colorBoxC.style.backgroundColor = selectedColor;
+}
+
+colorBox.addEventListener("change", changeColor);
+
+
+
+
+
+
+
+
 
 
 

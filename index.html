@@ -1,77 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clock by -Binod Magar</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
-    <div class="whole-container">
-        <!-- analog clock -->
-        <div class="button-2">
-            <div class="button-1"></div>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="whole-container" id="colorBoxC">
+      <!-- analog clock -->
+      <div class="button-2">
+        <div class="button-1" id="btn-cir1"></div>
+      </div>
+      <div class="analog-container">
+        <div class="circle">
+          <div class="sec-an arm" id="sec-an"><i></i></div>
+          <div class="min-an arm" id="min-an"><i></i></div>
+          <div class="hrs-an arm" id="hrs-an"><i></i></div>
+          <span style="--i: 0"><b>12</b></span>
+          <span style="--i: 1"><b>.</b></span>
+          <span style="--i: 2"><b>.</b></span>
+          <span style="--i: 3"><b>3</b></span>
+          <span style="--i: 4"><b>.</b></span>
+          <span style="--i: 5"><b>.</b></span>
+          <span style="--i: 6"><b>6</b></span>
+          <span style="--i: 7"><b>.</b></span>
+          <span style="--i: 8"><b>.</b></span>
+          <span style="--i: 9"><b>9</b></span>
+          <span style="--i: 10"><b>.</b></span>
+          <span style="--i: 11"><b>.</b></span>
         </div>
-        <div class="analog-container">
-            <div class="circle">
-                <div class="sec-an arm" id="sec-an"><i></i></div>
-                <div class="min-an arm" id="min-an"><i></i></div>
-                <div class="hrs-an arm" id="hrs-an"><i></i></div>
-                <span style="--i:0"><b>12</b></span>
-                <span style="--i:1"><b>.</b></span>
-                <span style="--i:2"><b>.</b></span>
-                <span style="--i:3"><b>3</b></span>
-                <span style="--i:4"><b>.</b></span>
-                <span style="--i:5"><b>.</b></span>
-                <span style="--i:6"><b>6</b></span>
-                <span style="--i:7"><b>.</b></span>
-                <span style="--i:8"><b>.</b></span>
-                <span style="--i:9"><b>9</b></span>
-                <span style="--i:10"><b>.</b></span>
-                <span style="--i:11"><b>.</b></span>
-            </div>
+      </div>
+
+      <!-- digital clock -->
+      <div class="digital-clock">
+        <div class="box">
+          <span id="hrs-dg">00</span>
+          <span>:</span>
+          <span id="min-dg">00</span>
+          <span>:</span>
+          <span id="sec-dg">00</span>
         </div>
+      </div>
 
-        
-        <!-- digital clock -->
-        <div class="digital-clock">
-            <div class="box">
-                <span id="hrs-dg">00</span>
-                <span>:</span>
-                <span id="min-dg">00</span>
-                <span>:</span>
-                <span id="sec-dg">00</span>
+      <div class="button-2">
+        <div class="button-1" id="btn-cir2"></div>
+      </div>
 
-            </div>
-        </div>
-
-        <div class="button-2">
-            <div class="button-1"></div>
-        </div>
-
-
-
-
-
-        <div class="legs">
-            <div class="leg-1 leg"></div>
-            <div class="leg-2 leg"></div>
-        </div>
-
-
+      <div class="legs">
+        <div class="leg-1 leg" id="leg"></div>
+        <div class="leg-2 leg" id="leg"></div>
+      </div>
     </div>
 
+    <div class="colorpicker" id="colorpicker">
+      <div class="colorBox" id="colorBox">
+        <table>
+          <tr>
+            <td>Box</td>
+            <td>Circle right</td>
+            <td>Circle left</td>
+            <td>Analog clock</td>
+            <td>Keys color</td>
+            <td>hour hand</td>
+            <td>Minute hand</td>
+            <td>Second hand</td>
+            <td>Digital clock</td>
 
-
-
-
-
-
-
-
-
+            
+          </tr>
+          <tr>
+            <td><input type="color" id="colorBox" /></td>
+            <td><input type="color" id="colorCircleL" /></td>
+            <td><input type="color" id="colorCircleR" /></td>
+            <td><input type="color" id="analog-clock" /></td>
+            <td><input type="color" id="KeysColor" /></td>
+            <td><input type="color" id="hourhand" /></td>
+            <td><input type="color" id="munitehand" /></td>
+            <td><input type="color" id="secondhand" /></td>
+            <td><input type="color" id="digital-clock" /></td>
+            
+          </tr>
+        </table>
+      </div>
+    </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
