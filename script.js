@@ -25,17 +25,31 @@ setInterval(() => {
 });
 
 
+//for changing color
+
+// const colorBoxC = document.getElementById("colorBoxC");
+// const colorBox = document.getElementById("colorBox");
 
 
-const colorBoxC = document.getElementById("colorBoxC");
-const colorBox = document.getElementById("colorBox");
 
-function changeColor()  {
-  const selectedColor = colorBox.value;
-  colorBoxC.style.backgroundColor = selectedColor;
-}
 
-colorBox.addEventListener("change", changeColor);
+// colorBox.addEventListener('input', (event) => {
+//   const chosenColor = event.target.value;
+//   colorBoxC.style.backgroundColor = chosenColor;
+// })
+
+
+
+const colorInputs = document.querySelectorAll('input[type="color"]');
+const boxes = document.querySelectorAll('.color-box');
+
+colorInputs.forEach((input, index) => {
+  input.addEventListener('input', () => {
+    const selectedColor = input.value;
+    boxes[index].style.backgroundColor = selectedColor;
+  });
+});
+
 
 
 

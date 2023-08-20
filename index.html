@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clock by -Binod Magar</title>
     <link rel="stylesheet" href="styles.css" />
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
   </head>
   <body>
-    <div class="whole-container" id="colorBoxC">
+    <div class="whole-container color-box" id="colorBoxC">
       <!-- analog clock -->
       <div class="button-2">
-        <div class="button-1" id="btn-cir1"></div>
+        <div class="button-1 color-box" id="btn-cir1"></div>
       </div>
       <div class="analog-container">
         <div class="circle">
-          <div class="sec-an arm" id="sec-an"><i></i></div>
-          <div class="min-an arm" id="min-an"><i></i></div>
-          <div class="hrs-an arm" id="hrs-an"><i></i></div>
+          <div class="sec-an arm" id="sec-an"><i class="color-box"></i></div>
+          <div class="min-an arm" id="min-an"><i class="color-box"></i></div>
+          <div class="hrs-an arm" id="hrs-an"><i class="color-box"></i></div>
           <span style="--i: 0"><b>12</b></span>
           <span style="--i: 1"><b>.</b></span>
           <span style="--i: 2"><b>.</b></span>
@@ -44,7 +45,7 @@
       </div>
 
       <div class="button-2">
-        <div class="button-1" id="btn-cir2"></div>
+        <div class="button-1 color-box" id="btn-cir2"></div>
       </div>
 
       <div class="legs">
@@ -59,13 +60,17 @@
           <tr>
             <td>Box</td>
             <td>Circle right</td>
-            <td>Circle left</td>
-            <td>Analog clock</td>
-            <td>Keys color</td>
-            <td>hour hand</td>
-            <td>Minute hand</td>
+            
             <td>Second hand</td>
+            
+            <td>Minute hand</td>
+            
+            
+            <td>hour hand</td>
             <td>Digital clock</td>
+            <td>Circle right</td>
+            <td>Feets</td>
+            <td>Analog clock</td>
 
             
           </tr>
@@ -79,7 +84,7 @@
             <td><input type="color" id="munitehand" /></td>
             <td><input type="color" id="secondhand" /></td>
             <td><input type="color" id="digital-clock" /></td>
-            
+            <td><input type="color" id="feets"></td>
           </tr>
         </table>
       </div>
