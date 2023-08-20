@@ -40,16 +40,31 @@ setInterval(() => {
 
 
 
-const colorInputs = document.querySelectorAll('input[type="color"]');
-const boxes = document.querySelectorAll('.color-box');
+// const colorInputs = document.querySelectorAll('input[type="color"]');
+// const boxes = document.querySelectorAll('.color-box');
 
-colorInputs.forEach((input, index) => {
-  input.addEventListener('input', () => {
-    const selectedColor = input.value;
-    boxes[index].style.backgroundColor = selectedColor;
-  });
+// colorInputs.forEach((input, index) => {
+//   input.addEventListener('input', () => {
+//     const selectedColor = input.value;
+//     boxes[index].style.backgroundColor = selectedColor;
+//   });
+// });
+
+
+
+const colorObjects = document.querySelectorAll('.color-object');
+const colorPickers = document.querySelectorAll('.color-picker');
+
+colorPickers.forEach((colorPicker) => {
+    colorPicker.addEventListener('input', (event) => {
+        const targetId = event.target.dataset.target;
+        console.log(targetId)
+        const chosenColor = event.target.value;
+
+        const targetObject = document.getElementById(targetId);
+        targetObject.style.backgroundColor = chosenColor;
+    });
 });
-
 
 
 
