@@ -52,19 +52,19 @@ setInterval(() => {
 
 
 
-const colorObjects = document.querySelectorAll('.color-object');
-const colorPickers = document.querySelectorAll('.color-picker');
+// const colorObjects = document.querySelectorAll('.color-object');
+// const colorPickers = document.querySelectorAll('.color-picker');
 
-colorPickers.forEach((colorPicker) => {
-    colorPicker.addEventListener('input', (event) => {
-        const targetId = event.target.dataset.target;
-        console.log(targetId)
-        const chosenColor = event.target.value;
+// colorPickers.forEach((colorPicker) => {
+//     colorPicker.addEventListener('input', (event) => {
+//         const targetId = event.target.dataset.target;
+//         // console.log(targetId)
+//         const chosenColor = event.target.value;
 
-        const targetObject = document.getElementById(targetId);
-        targetObject.style.backgroundColor = chosenColor;
-    });
-});
+//         const targetObject = document.getElementById(targetId);
+//         targetObject.style.backgroundColor = chosenColor;
+//     });
+// });
 
 
 

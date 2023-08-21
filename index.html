@@ -8,10 +8,10 @@
     <link href="/favicon.ico" type="image/x-icon" rel="icon" />
   </head>
   <body>
-    <div class="whole-container color-box color-object" id="colorBoxC">
+    <div class="whole-container color-box color-object" id="colorBoxC" data-id="1">
       <!-- analog clock -->
       <div class="button-2">
-        <div class="button-1 color-box color-object" id="btn-cir1"></div>
+        <div class="button-1 color-box color-object" id="btn-cir1" data-id="2"></div>
       </div>
       <div class="analog-container" >
         <div class="circle color-object" id="ana-clk">
@@ -45,56 +45,13 @@
       </div>
 
       <div class="button-2">
-        <div class="button-1 color-box color-object" id="btn-cir2"></div>
+        <div class="button-1 color-box color-object" id="btn-cir2" data-id="2"></div>
       </div>
 
-      <div class="legs">
-        <div class="leg-1 leg color-object" id="legf"></div>
-        <div class="leg-2 leg color-object" id="legf"></div>
-      </div>
-    </div>
-
-    <div class="colorpicker" id="colorpicker">
-      <div class="colorBox" id="colorBox">
-        <table>
-          <tr>
-            <td>Box</td>
-            <td>Circle right</td>
-            <td>Circle Left</td>
-            <td>Analog clock</td>
-            
-            <td>hour hand</td>
-            <td>Minute hand</td>
-            <td>Second hand</td>
-
-            <td>Digital clock</td>
-
-            <td>Feets</td>
-          </tr>
-          <tr>
-            <!-- <td><input type="color" class="color-picker" id="colorBox" /></td>
-            <td><input type="color" class="color-picker" id="colorCircleL" /></td>
-            <td><input type="color" class="color-picker" id="colorCircleR" /></td>
-            <td><input type="color" class="color-picker" id="analog-clock" /></td>
-            <td><input type="color" class="color-picker" id="KeysColor" /></td>
-            <td><input type="color" class="color-picker" id="hourhand" /></td>
-            <td><input type="color" class="color-picker" id="munitehand" /></td>
-            <td><input type="color" class="color-picker" id="secondhand" /></td>
-            <td><input type="color" class="color-picker" id="digital-clock" /></td>
-            <td><input type="color" class="color-picker" id="feets" /></td> -->
-            <td><input type="color" class="color-picker" data-target="colorBoxC"/></td>
-            <td><input type="color" class="color-picker" data-target="btn-cir1"/></td>
-            <td><input type="color" class="color-picker" data-target="btn-cir2"/></td>
-            <td><input type="color" class="color-picker" data-target="ana-clk" /></td>
-           
-            <td><input type="color" class="color-picker" data-target="hrs-analog"/></td>
-            <td><input type="color" class="color-picker" data-target="min-analog"/></td>
-            <td><input type="color" class="color-picker" data-target="sec-analog"/></td>
-            <td><input type="color" class="color-picker" data-target="dg-color" /></td>
-            <td><input type="color" class="color-picker" data-target="legf"/></td>
-          </tr>
-        </table>
-      </div>
+      <!-- <div class="legs" >
+        <div class="leg-1 leg color-object" id="leg1" ></div>
+        <div class="leg-2 leg color-object" id="leg2"></div>
+      </div> -->
     </div>
 
     <script src="script.js"></script>
